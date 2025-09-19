@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Grid Layout</title>
-    <!-- Link to Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link to custom CSS -->
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Row 1 -->
-        <div class="row row1">
-            <div class="col-md-4 col-sm-6 row1-col1">
-                Row1 col1
-            </div>
-            <div class="col-md-8 col-sm-6 row1-col2">
-                Row1 col2
-            </div>
-        </div>
 
-        <!-- Row 2 -->
-        <div class="row row2">
-            <div class="col-md-4 offset-md-2 col-sm-6 row2-col1">
-                Row2 col1
-            </div>
-            <div class="col-md-4 col-sm-6 row2-col2">
-                Row2 col2
-            </div>
-        </div>
-
-        <!-- Row 3 -->
-        <div class="row row3">
-            <div class="col-md-4 col-sm-6 row3-col1">
-                Row3 col1
-            </div>
-            <div class="col-md-4 col-sm-6 row3-col2">
-                Row3 col2
-            </div>
-        </div>
+  <div class="container container-custom">
+    
+    <!-- Row 1 -->
+    <div class="row row-custom">
+      <div class="col-md-4 col-sm-6 r1c1">Row1 col1</div>
+      <div class="col-md-8 col-sm-6 r1c2">Row1 col2</div>
     </div>
 
-    
+    <!-- Row 2 -->
+    <div class="row row-custom">
+      <div class="col-md-4 offset-md-2 col-sm-6 r2c1">Row2 col1</div>
+      <div class="col-md-4 col-sm-6 r2c2">Row2 col2</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row row-custom justify-content-center">
+      <div class="col-md-4 col-sm-6 r3c1">Row3 col1</div>
+      <div class="col-md-4 col-sm-6 r3c2">Row3 col2</div>
+    </div>
+
+  </div>
+
 </body>
 </html>

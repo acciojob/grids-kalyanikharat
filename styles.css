@@ -1,44 +1,73 @@
-/* Container styles */
-.container {
-    width: 600px;
-    border: 5px solid rgb(4, 255, 4);
-    background-color: rgb(41, 0, 0);
+.container-custom {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 5px solid rgb(4, 255, 4);
+  background-color: rgb(41, 0, 0);
+  padding: 10px;
 }
 
-/* Row styles */
-.row1, .row2, .row3 {
-    border: 5px solid rgb(255, 188, 188);
-    height: 200px;
+.row-custom {
+  border: 5px solid rgb(255, 188, 188);
+  height: 200px;
+  margin-bottom: 20px;
 }
 
-/* Column styles */
-.row1-col1, .row1-col2, .row2-col1, .row2-col2, .row3-col1, .row3-col2 {
-    border: 2px dotted rgb(38, 38, 43);
+.r1c1 {
+  background-color: teal;
+  border: 2px dotted rgb(38, 38, 43);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-/* Row 1 specific column styles */
-.row1-col1 {
-    background-color: teal;
+.r1c2 {
+  background-color: thistle;
+  border: 2px dotted rgb(38, 38, 43);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.row1-col2 {
-    background-color: thistle;
+.r2c1 {
+  background-color: tomato;
+  border: 2px dotted rgb(38, 38, 43);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-/* Row 2 specific column styles */
-.row2-col1 {
-    background-color: tomato;
+.r2c2 {
+  background-color: turquoise;
+  border: 2px dotted rgb(38, 38, 43);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.row2-col2 {
-    background-color: turquoise;
+.r3c1 {
+  background-color: violet;
+  border: 2px dotted rgb(38, 38, 43);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-/* Row 3 specific column styles */
-.row3-col1 {
-    background-color: violet;
-}
-
-.row3-col2 {
-    background-color: yellowgreen;
+.r3c2 {
+  background-color: yellowgreen;
+  border: 2px dotted rgb(38, 38, 43);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
