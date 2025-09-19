@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Responsive Grid with Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .custom-container {
+      max-width: 600px;
+      border: 5px solid rgb(4, 255, 4);
+      background-color: rgb(41, 0, 0);
+    }
+    .custom-row {
+      border: 5px solid rgb(255, 188, 188);
+      height: 200px;
+    }
+    .custom-col {
+      border: 2px dotted rgb(38, 38, 43);
+      height: 100%;
+    }
 
+    /* Specific column backgrounds */
+    .row1-col1 { background-color: teal; }
+    .row1-col2 { background-color: thistle; }
+    .row2-col1 { background-color: tomato; }
+    .row2-col2 { background-color: turquoise; }
+    .row3-col1 { background-color: violet; }
+    .row3-col2 { background-color: yellowgreen; }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container custom-container">
+
+    <!-- Row 1 -->
+    <div class="row custom-row">
+      <div class="col-md-4 col-sm-6 custom-col row1-col1">Row1 col1</div>
+      <div class="col-md-8 col-sm-6 custom-col row1-col2">Row1 col2</div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row custom-row">
+      <div class="col-md-4 offset-md-2 custom-col row2-col1">Row2 col1</div>
+      <div class="col-md-4 custom-col row2-col2">Row2 col1</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row justify-content-center custom-row">
+      <div class="col-md-4 col-sm-6 custom-col row3-col1">Row3 col1</div>
+      <div class="col-md-4 col-sm-6 custom-col row3-col2">Row3 col2</div>
+    </div>
+
+  </div>
 
 </body>
-
 </html>
